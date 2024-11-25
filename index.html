@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mac-code-window</title>
+  <style>
+    .fakeMenu {
+      background-color: #bbb;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 25px;
+    }
+
+    .fakeScreen {
+      background-color: #060c11;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 500px;
+      padding: 20px;
+    }
+
+    .fakeMenu,
+    .fakeScreen {
+      box-sizing: border-box;
+      margin: 0 auto;
+      width: 800px;
+    }
+
+    .fakeButtons {
+      background-color: #ff3b47;
+      border: 1px solid #9d252b;
+      border-radius: 50%;
+      display: inline-block;
+      height: 10px;
+      left: 6px;
+      position: relative;
+      top: 6px;
+      width: 10px;
+    }
+
+    .fakeMinimize {
+      background-color: #ffc100;
+      border-color: #9d802c;
+      left: 11px;
+    }
+
+    .fakeZoom {
+      background-color: #00d742;
+      border-color: #049931;
+      left: 16px;
+    }
+
+    @media only screen and (max-height: 790px) {
+      .fakeScreen {
+        height: 135px;
+      }
+    }
+
+    .response-line {
+      color: #bcb9b9;
+    }
+
+    .cursor-line {
+      color: #fff;
+    }
+
+    p {
+      font-family: monospace;
+      font-size: 1.25em;
+      position: relative;
+      text-align: left;
+      white-space: normal;
+    }
+
+    .cursor4 {
+      animation: blink 1s 0s infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fakeMenu">
+    <div class="fakeButtons fakeClose"></div>
+    <div class="fakeButtons fakeMinimize"></div>
+    <div class="fakeButtons fakeZoom"></div>
+  </div>
+  <div class="fakeScreen">
+    <div class="response-line">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum optio ipsa tempora nesciunt quo nemo
+        accusantium, aut reprehenderit repudiandae possimus et magnam fugit hic totam illo at vitae corrupti.</p>
+    </div>
+    <p class="cursor-line">&gt;<span class="cursor4">_</span></p>
+  </div>
+</body>
+
+</html>
